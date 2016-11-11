@@ -1,10 +1,10 @@
-# Frontend Handbook
+# Frontend Handbook V1.0.0
 
 ## Intro
 When we talk about frontend development, people often think about HTML,
 CSS, Javascript. However there are more than that, there are much more
 than that. For example, http2/https, web performance, responsive deisgn
-and development...
+and development, etc.
 
 Learning frontend development can be frustrating due to the
 nature of frontend technologies develops so fast. Something new is
@@ -17,3 +17,6 @@ it's called..." moment during their development.
 That's why I want to create this document that consolidate that all the
 bits and pieces into one places, how deep I understand each bits and
 pieces and keep track with what other technology and topics I want to learn.
+
+### Book URL
+https://francismengx.gitbooks.io/fontend-handbook/content/
