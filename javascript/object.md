@@ -62,9 +62,9 @@ let example = {
 let another_example = Object.create(example)
 
 console.log(another_example.foo)
-> this is foo
+> 'this is foo'
 console.log(another_example.bar)
-> this is bar
+> 'this is bar'
 ```
 
 Modifying the created object won't effect the prototype object:
@@ -73,9 +73,9 @@ Modifying the created object won't effect the prototype object:
 another_example.foo = "another foo"
 
 console.log(another_example.foo)
-> another example
+> 'another example'
 console.log(another_example.__proto__.foo)
-> this is foo
+> 'this is foo'
 ```
 
 Prototype object are dynamically binded to the objects that uses it as
@@ -85,3 +85,33 @@ example.foobar = "this is foobar"
 console.log(another_example.foobar)
 > this is foobar
 ```
+
+#### Inspection
+The key word ```typeof``` can check the type of an object.
+```javascript
+var example = {}
+example.num1 = 1
+typeof example.num1
+> 'number'
+```
+
+Function ```hasOwnProperty``` can check if a object as certain property.
+This function does not look at the prototype chain.
+```javascript
+var example = {}
+example.num1 = 1
+exmaple.string1 = "this is string"
+
+var anotherObject = Object.create(example)
+anotherObject.num1 = 2
+
+console.log(example.hasOwnProperty("num1"))
+> true
+console.log(anotherObject.hasOwnProperty("num1"))
+> true
+console.log(example.hasOwnProperty("string1"))
+> true
+console.log(anotherObject.hasOwnProperty("string1"))
+> false
+
+#### Enumeration
