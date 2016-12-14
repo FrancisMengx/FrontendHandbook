@@ -83,7 +83,7 @@ prototype object. Continue with the previous example.
 ```javascript
 example.foobar = "this is foobar"
 console.log(another_example.foobar)
-> this is foobar
+> 'this is foobar'
 ```
 
 #### Inspection
@@ -113,5 +113,5 @@ console.log(example.hasOwnProperty("string1"))
 > true
 console.log(anotherObject.hasOwnProperty("string1"))
 > false
-
+```
 #### Enumeration
