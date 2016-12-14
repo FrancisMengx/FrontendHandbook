@@ -54,12 +54,12 @@ is linked to Object.prototype object. You can also link prototype
 manually by using ```Object.create``` function.
 
 ```javascript
-example = {
+let example = {
   foo: "this is foo",
   bar: "this is bar"
 }
 
-another_example = Object.create(example)
+let another_example = Object.create(example)
 
 console.log(another_example.foo)
 > this is foo
