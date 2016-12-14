@@ -22,7 +22,7 @@ including empty string, and value can any javascript value.
 ### Object Literals
 object literals are the name/value pairs between curly braces.
 E.G.
-```
+```javascript
 {
   foo: "bar"
 }
@@ -36,14 +36,14 @@ E.G.
 
 #### Retrieval
 There are two ways to retrieve value in an object.
-```
+```javascript
 foo.bar
 foo["bar"]
 ```
 
 #### Update
 Like Retrieval there are two ways to update an object.
-```
+```javascript
 foo.bar = "123"
 foo.["bar"] = "123"
 ```
@@ -53,7 +53,7 @@ Each javascript is linked to a prototyp object. All the object literals
 is linked to Object.prototype object. You can also link prototype
 manually by using ```Object.create``` function.
 
-```
+```javascript
 example = {
   foo: "this is foo",
   bar: "this is bar"
@@ -69,7 +69,7 @@ console.log(another_example.bar)
 
 Modifying the created object won't effect the prototype object:
 
-```
+```javascript
 another_example.foo = "another foo"
 
 console.log(another_example.foo)
@@ -80,7 +80,7 @@ console.log(another_example.__proto__.foo)
 
 Prototype object are dynamically binded to the objects that uses it as
 prototype object. Continue with the previous example.
-```
+```javascript
 example.foobar = "this is foobar"
 console.log(another_example.foobar)
 > this is foobar
