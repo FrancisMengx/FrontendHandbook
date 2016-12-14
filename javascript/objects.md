@@ -49,4 +49,39 @@ foo.["bar"] = "123"
 ```
 
 #### Prototype
+Each javascript is linked to a prototyp object. All the object literals
+is linked to Object.prototype object. You can also link prototype
+manually by using ```Object.create``` function.
 
+```
+example = {
+  foo: "this is foo",
+  bar: "this is bar"
+}
+
+another_example = Object.create(example)
+
+console.log(another_example.foo)
+> this is foo
+console.log(another_example.bar)
+> this is bar
+```
+
+Modifying the created object won't effect the prototype object:
+
+```
+another_example.foo = "another foo"
+
+console.log(another_example.foo)
+> another example
+console.log(another_example.__proto__.foo)
+> this is foo
+```
+
+Prototype object are dynamically binded to the objects that uses it as
+prototype object. Continue with the previous example.
+```
+example.foobar = "this is foobar"
+console.log(another_example.foobar)
+> this is foobar
+```
