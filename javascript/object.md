@@ -1,4 +1,4 @@
-## Objects
+## Object
 Object is the most important data type in javascript, having a good
 understanding of how it works and how to change and use an object is
 largely beneficial for our development work.

@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Javascript](javascript/overview.md)
   * Basics
-    * [Objects](javascript/objects.md)
+    * [Object](javascript/object.md)
 * [Browser](browser/README.md)
   * How Browsers Work
   * Difference Between Browsers
