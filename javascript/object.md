@@ -114,4 +114,17 @@ console.log(example.hasOwnProperty("string1"))
 console.log(anotherObject.hasOwnProperty("string1"))
 > false
 ```
-#### Enumeration
+
+#### Delete
+The ```delete``` operator can be used to remove a property from an
+object.
+```javascript
+console.log(anotherObject.num1)
+> 2
+delete anotherObject.num1
+console.log(anotherObject.num1)
+> 1
+```
+* Note: delete operator won't remove anything in the prototype chain.
+
+
